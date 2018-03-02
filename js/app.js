@@ -132,6 +132,8 @@ $frmSearch.on('submit', function () {
 
         counter++;
     }
+    
+    return false;
 
 });
 
