@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sarfraz Ahmed (sarfraznawaz2005@gmail.com)">
+    <title>Holy Quran</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="card mb-3 text-white bg-primary">
+        <div class="card-header">
+            <div class="float-left">
+                <strong>Holy Quran</strong>
+            </div>
+            <div class="float-right">
+                <form action="#" id="frmSearch">
+                    <div class="float-left">
+                        <input type="text" required id="search" class="form-control small" placeholder="Search Translation">
+                    </div>
+                    <div class="float-left">&nbsp;</div>
+                    <div class="float-right">
+                        <input type="submit" id="searchBtn" class="btn btn-sm btn-success" value="Search">
+                        <div class="float-none"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <select name="chapter" id="chapter" class="form-control" disabled>
+                        <option value="">Select Chapter</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="result">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">
+                <div class="float-left">
+                    <strong class="info"></strong>
+                </div>
+                <div class="float-right">
+                    <select name="verse" id="verse">
+                        <option value="">GoTo Verse</option>
+                    </select>
+                </div>
+                <div class="float-right">&nbsp;&nbsp;&nbsp;</div>
+                <div class="float-right">
+                    <span class="badge badge-warning count">Total Verses: 00</span>
+                </div>
+                <div class="float-none"></div>
+            </div>
+            <div class="card-body main"></div>
+        </div>
+    </div>
+
+    <div id="top" class="bg-success text-white">&uarr;</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
