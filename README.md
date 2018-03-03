@@ -7,9 +7,10 @@ The Holy Quran with English translation.
 
 ## Installation
 
-Simply [download](https://github.com/sarfraznawaz2005/holy-quran/archive/master.zip) the repo and open up `index.html` file.
+Simply [download](https://github.com/sarfraznawaz2005/holy-quran/archive/master.zip) the repo, move to htdocs/www and open it in the browser.
 
-**Note** Bootstrap CSS file and jQuery are loaded via CDN which means there should be active internet connection to view the functionality correctly OR you can simply download both dependencies (from respective sites) and specify locally in which case it will even if you don't have internet connection.
+**NOTE** You can also open html file directly but you may receive cross domain request error, [see this](https://stackoverflow.com/questions/4819060/allow-google-chrome-to-use-xmlhttprequest-to-load-a-url-from-a-local-file) fore more info.
+
 
 ## Similar Projects
 
