@@ -29,17 +29,18 @@ $chapter.on('change', function () {
 
     if (!chapter) {
         $count.text('00');
-        $info.css('display', 'none');
-        $result.css('display', 'none');
+        $info.hide();
+        $result.hide();
+        $top.hide();
         return;
     };
 
     $.getJSON('./json/surah/surah_' + chapter + '.json', function (quran) {
         $.getJSON('./json/translation/en/en_translation_' + chapter + '.json', function (trans) {
-            //console.log(trans);
 
             $verse.show();
             $count.show();
+            $top.show();
             $verse.empty();
             $verse.append('<option value="">GoTo Verse</option>');
             $main.empty();
@@ -87,6 +88,7 @@ $top.on('click', function () {
 // search translation
 $frmSearch.on('submit', function () {
     var counter = 1;
+    var total = 0;
     var keyword = $search.val();
 
     if (!keyword) {
@@ -97,9 +99,11 @@ $frmSearch.on('submit', function () {
 
     $verse.hide();
     $main.empty();
+    $info.show();
     $info.text('Search Results');
     $count.hide();
-    $result.css('display', 'block');
+    $result.show();
+    $top.show();
 
     while (counter <= 114) {
         (function (counter) {
@@ -108,6 +112,8 @@ $frmSearch.on('submit', function () {
                 $.each(trans.verse, function (i, v) {
                     if (v.indexOf(keyword) > -1 || v.toLowerCase().indexOf(keyword) > -1) {
                         $.getJSON('./json/surah/surah_' + counter + '.json', function (quran) {
+                            total++;
+                        
                             var verseNumber = i.replace(/\D/g, '');
 
                             var text = '<table width="100%">';
@@ -120,6 +126,7 @@ $frmSearch.on('submit', function () {
                             text += '</tr>';
                             text += '</table>';
 
+                            $info.text('Search Results (' + total + ')');
                             $searchBtn.attr('disabled', false);
 
                             $main.append(text);
