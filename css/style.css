@@ -1,0 +1,79 @@
+@font-face {
+    font-family: '_PDMS_Saleem_QuranFont';
+    src: url('font.ttf')  format('truetype');
+}
+
+html,body {
+    height: 100%;
+    min-height: 100%;
+    font-size: 14px;
+    margin: 5px;
+    background: #333;
+}
+
+.result {
+    display: none;
+}
+
+.arabic, .trans {
+    text-align: center !important;
+}
+
+.alert {
+    margin: 0;
+    border-radius: 0 !important;
+    font-weight: bold;
+    color:#555;
+}
+
+.alert.arabic {
+    font-family: '_PDMS_Saleem_QuranFont';
+    font-size: 24px;
+}
+
+.alert.trans {
+    border:none !important;
+    background: #fff;
+}
+
+ul.info {
+    padding: 0;
+    display: none;
+}
+
+td {
+    border:none !important;
+    padding: 0;
+    margin:0;
+}
+
+.td_info {
+    vertical-align: top;
+    text-align: center !important;
+}
+
+ul.info li {
+    list-style: none;
+    display: inline;
+}
+
+#top {
+    font-size: 24px !important;
+    width:40px;
+    vertical-align: top;
+    text-align: center !important;
+    font-weight: bold;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.small {
+    padding: 2px 5px 2px 5px;
+}
+
+.star {
+    cursor: pointer;
+}
