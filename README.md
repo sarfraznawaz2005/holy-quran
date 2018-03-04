@@ -5,6 +5,10 @@ The Holy Quran with English translation.
 
 ![Screenshot](https://raw.githubusercontent.com/sarfraznawaz2005/holy-quran/master/screen.png)
 
+## View Online
+
+[Holy Quran](https://sarfraznawaz2005.github.io/holy-quran/)
+
 ## Installation
 
 Simply [download](https://github.com/sarfraznawaz2005/holy-quran/archive/master.zip) the repo, move to htdocs/www and open it in the browser.
