@@ -20,3 +20,4 @@ Simply [download](https://github.com/sarfraznawaz2005/holy-quran/archive/master.
 
 - [Quran Chrome Extension](https://github.com/sarfraznawaz2005/quran-chrome)
 - [Quran CLI](https://github.com/sarfraznawaz2005/quran-cli)
+- [Holy Quran Android](https://github.com/sarfraznawaz2005/nativescript-holyquran)
