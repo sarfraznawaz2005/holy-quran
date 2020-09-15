@@ -18,6 +18,6 @@ Simply [download](https://github.com/sarfraznawaz2005/holy-quran/archive/master.
 
 ## Similar Projects
 
-- [Quran Chrome Extension](https://github.com/sarfraznawaz2005/quran-chrome)
+- [Quran Chrome Extension](https://github.com/sarfraznawaz2005/quran-browser-extension)
 - [Quran CLI](https://github.com/sarfraznawaz2005/quran-cli)
 
